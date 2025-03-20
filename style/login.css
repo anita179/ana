@@ -1,0 +1,158 @@
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  :root {
+    --primary-color: #3498db; /* Blue */
+    --secondary-color: #f8f9fa; /* Light gray */
+  }
+  
+  body {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    text-align: center;
+    position: relative;
+  }
+  
+  form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: var(--primary-color);
+    border-radius: 10px 10px 0 0;
+  }
+  
+  input {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  
+  button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9; /* Slightly darker blue */
+  }
+  
+  /* Logo section */
+  .logo {
+    margin-bottom: 30px;
+  }
+  
+  .logo h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .logo img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .logo p {
+    color: #777;
+    font-size: 14px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    form {
+      width: 90%;
+      padding: 30px 20px;
+    }
+    
+    .logo img {
+      width: 60px;
+    }
+    
+    .logo h1 {
+      font-size: 20px;
+    }
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  /* Remember me checkbox */
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .remember-me input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+  
+  .remember-me label {
+    color: #777;
+    font-size: 14px;
+  }
+  
+  /* Forgot password link */
+  .forgot-password {
+    text-align: right;
+    margin-top: 15px;
+  }
+  
+  .forgot-password a {
+    color: var(--primary-color);
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
