@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <title>Login</title>
     <!-- Incluir hoja de estilos externa -->
-    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="../style/login.css">
 </head>
 <body>
     <!-- Formulario de inicio de sesión -->

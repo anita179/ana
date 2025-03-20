@@ -11,7 +11,7 @@ $result = $conn->query("SELECT id, nombre, apellido, telefono, direccion, fecha_
 <head>
     <title>Pacientes</title>
     <!-- Incluir hoja de estilos externa -->
-    <link rel="stylesheet" href="./style/lista_pacientes.css">
+    <link rel="stylesheet" href="../style/lista_pacientes.css">
     <style>
         .boton-agregar {
             display: inline-block;
